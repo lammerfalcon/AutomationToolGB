@@ -7,6 +7,10 @@
         letter-spacing: 0.05em;
         color: #1F3F68;
     }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
     .top_header {
         background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
@@ -556,6 +560,7 @@
         width: 100%;
         height: auto;
     }
+    
 
     @media only screen and (max-width: 1366px) {
         .wrapper {
