@@ -10,7 +10,12 @@
 
     .top_header {
         background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
-        margin-bottom: 64px;
+        padding-bottom: 64px;
+    }
+
+    .contact_header {
+        padding: 0;
+        background: none;
     }
 
     .wrapper {
@@ -92,7 +97,7 @@
         transition: all 300ms ease-in-out;
     }
 
-    .wrapper .col_left .button:hover {
+    .button:hover {
         opacity: 0.3;
         transition: all 300ms ease-in-out;
     }
@@ -105,6 +110,7 @@
         letter-spacing: 0.05em;
         color: #000000;
         margin-bottom: 64px;
+        margin-top: 64px;
     }
 
     .help .help_info {
@@ -127,6 +133,11 @@
         text-align: center;
         margin-top: 44px;
         margin-bottom: 50px;
+    }
+
+    .thumbnail a img {
+        width: 100%;
+        height: auto;
     }
 
     .help_info .info_item:first-child .thumbnail {
@@ -197,18 +208,38 @@
         margin-bottom: 112px;
     }
 
-    .project_item:first-child .project_name {
-        margin-left: 678px;
-        margin-top: 64px;
+    .main_item .project_item {
+        position: relative;
     }
+
+    .main_item .project_item .project_name {
+        position: absolute;
+        right: 8%;
+        top: 12%;
+    }
+
+    .side_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .side_item .project_item {
+        width: calc(50% - 16px);
+        position: relative;
+    }
+
     .project_item:hover .style::after {
         opacity: 0;
         transition: all 300ms ease-in-out;
     }
+
     .project_item:hover .style2::after {
         opacity: 0;
         transition: all 300ms ease-in-out;
     }
+
     .project_item:hover .style3::after {
         opacity: 0;
         transition: all 300ms ease-in-out;
@@ -268,6 +299,8 @@
     .project_img {
         background: #E8E8E8;
         border-radius: 10px;
+        width: 100%;
+        height: auto;
     }
 
     .project_name {
@@ -352,7 +385,7 @@
 
     .wrapper .contact_info .number {
         margin-right: 20px;
-        font-weight: 500;
+        font-weight: bold;
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.05em;
@@ -366,4 +399,334 @@
         color: #FFFFFF;
         opacity: 0.4;
         padding-bottom: 64px;
+    }
+
+    .title .contact_title {
+        background: url(/img/title_bg.svg) center center no-repeat;
+        background-size: 100%;
+        height: 250px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .title .contact_title h1 {
+        font-weight: bold;
+        font-size: 44px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        padding-top: 50px;
+        margin-bottom: 16px;
+    }
+
+    .title .contact_title p {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.6);
+        padding-bottom: 50px;
+        max-width: 780px;
+        margin: 0 auto;
+    }
+
+    .message {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        margin-top: 57px;
+    }
+
+    .message .col_left {
+        max-width: 300px;
+        height: auto;
+        text-align: left;
+    }
+
+    .message .col_left h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        margin-bottom: 24px;
+    }
+
+    .message .col_left .thumbnail {
+        margin-bottom: 55px;
+    }
+
+    .message .col_left p {
+        margin-bottom: 0;
+    }
+
+    .message.col_left .contact_item p, .contact_item a, .contact_item address {
+        text-decoration: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        opacity: 0.6;
+    }
+
+    .message .col_left .contact_item {
+        margin-bottom: 40px;
+    }
+
+    .message .col_right {
+        background: #FFFFFF;
+        box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        max-width: 540px;
+        height: auto;
+    }
+
+    .col_right .wrapper {
+        max-width: 428px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .col_right .modal .modal_header {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        margin-top: 56px;
+        margin-bottom: 48px;
+    }
+
+    .modal_form {
+        padding-bottom: 56px;
+    }
+
+    .modal_form .form_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal_form .form_item textarea {
+        resize: none;
+    }
+
+    .modal_form .form_item .form_name {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+        opacity: 0.8;
+    }
+
+    .form_item .form_input {
+        opacity: 0.4;
+        border: 1px solid #356EAD;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 25px 0px 25px 42px;
+        margin-bottom: 70px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .form_item .form_input:focus {
+        opacity: 0.8;
+        border: 1px solid #1F3F68;
+        transition: all 300ms ease-in-out;
+    }
+
+    .modal_form .form_item .button {
+        background: #5A98D0;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+        border-radius: 10px;
+        border: 0;
+        padding-top: 23px;
+        padding-bottom: 23px;
+    }
+
+    .map .google_map {
+        text-align: center;
+        margin-bottom: 93px;
+        width: 100%;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 1366px) {
+        .wrapper {
+            width: 96%;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .wrapper {
+            width: 94%;
+        }
+        .about .wrapper {
+            align-items: flex-end;
+        }
+        .wrapper .col_right {
+            width: calc(40% - 7px);
+        }
+        .wrapper .col_left {
+            width: calc(70% - 7px);
+        }
+        .help .help_info {
+            display: block;
+        }
+        .help .help_info .info_item {
+            margin: 0 auto;
+            max-width: 335px;
+            width: 100%;
+        }
+        .project_item .project_name {
+            font-size: 22px;
+        }
+        .footer .wrapper {
+            width: 67%;
+        }
+        .top_footer .wrapper .contact .button {
+            white-space: nowrap;
+        }
+        .top_footer .wrapper .interested {
+            max-width: 335px;
+        }
+        .top_footer .wrapper .contact .button {
+            padding: 7px 30px;
+        }
+        .wrapper .contact_info {
+            display: inline-block;
+        }
+        .wrapper .contact_info li {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+        .title .contact_title {
+            background-size: auto;
+            height: auto;
+        }
+        .message {
+            display: inline-block;
+            text-align: center;
+        }
+        .message .col_left, .message .col_right {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .message {
+            display: flex;
+            margin-bottom: 32px; 
+        }
+        .message .col_right .modal {
+            width: 90%;
+        }
+        .google_map {
+            margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (max-width: 414px) {
+        .wrapper {
+            width: 90%;
+        }
+        .about {
+            padding-bottom: 0;
+        }
+        .about .wrapper {
+            display: block;
+        }
+        .wrapper .col_left h1 {
+            max-width: 300px;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #1F3F68;
+            margin: 0 auto;
+            margin-bottom: 12px;
+        }
+        .wrapper .col_left {
+            width: 100%;
+            text-align: center;
+        }
+        .about .wrapper .col_right {
+            display: none;
+        }
+        .help .box_title {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+        .projects .box_title {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+        .projects .subtitle {
+            width: 100%;
+        }
+        .side_item {
+            display: block;
+        }
+        .side_item .project_item {
+            width: 100%;
+        }
+        .project_item .project_name {
+            font-size: 16px;
+            line-height: 19px;
+        }
+        .main_item .project_item .project_name {
+            top: 0;
+        }
+        .project_name {
+            margin-top: 16px;
+            margin-left: 26px;
+        }
+        .footer .top_footer .wrapper {
+            display: block;
+            text-align: center;
+        }
+        .footer .top_footer .wrapper, .bottom_footer .wrapper {
+            display: block;
+            width: 90%;
+        }
+        .top_footer .wrapper .interested h5 {
+            padding-top: 18px;
+        }
+        .top_footer .wrapper .interested p {
+            margin-bottom: 40px;
+        }
+        .wrapper .footer_item {
+            margin-bottom: 40px;
+        }
+        .bottom_footer .wrapper p {
+            text-align: center;
+            padding-bottom: 32px;
+        }
+        .title .contact_title h1 {
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.04em;
+        }
+        .title .contact_title p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+       .message {
+           display: flex;
+           margin-bottom: 32px; 
+       }
+       .message .col_right .modal {
+           width: 90%;
+       }
+       .google_map {
+           margin-bottom: 0;
+       }
     }
