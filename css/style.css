@@ -565,6 +565,10 @@
         width: 100%;
         height: auto;
     }
+    .carousel-indicators [data-bs-target] {
+        background-color: #5A98D0 !important; 
+    }
+   
 
     @media only screen and (max-width: 1366px) {
         .wrapper {
@@ -642,6 +646,9 @@
         }
         .wrapper .col_left h1 {
             font-size: 50px;
+        }
+        .carousel-indicators {
+            margin-bottom: -2rem !important;
         }
     }
 
@@ -740,5 +747,11 @@
         }
         .google_map {
             margin-bottom: 0;
+        }
+        .carousel-inner {
+            overflow: visible !important;
+        }
+        .carousel-indicators {
+            margin-bottom: -3rem !important;
         }
     }
