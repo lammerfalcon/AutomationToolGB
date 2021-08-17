@@ -568,6 +568,9 @@
     .carousel-indicators [data-bs-target] {
         background-color: #5A98D0 !important; 
     }
+    .carousel-item {
+        height: 650px;
+    }
    
 
     @media only screen and (max-width: 1366px) {
@@ -649,6 +652,9 @@
         }
         .carousel-indicators {
             margin-bottom: -2rem !important;
+        }
+        .carousel-item {
+            height: 550px;
         }
     }
 
@@ -753,5 +759,8 @@
         }
         .carousel-indicators {
             margin-bottom: -3rem !important;
+        }
+        .carousel-item {
+            height: 453px;
         }
     }
